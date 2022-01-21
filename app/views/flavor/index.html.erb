@@ -1,0 +1,9 @@
+<h1>Spice World</h1>
+<p>Gourmet Indulgence, San Diego, CA </p>
+<ul>
+    <% @flavors.each do |flavor| %>
+    <li>
+        <%= link_to flavor.name, flavors_path(flavor) %>
+    </li>
+   <% end %>
+</ul>

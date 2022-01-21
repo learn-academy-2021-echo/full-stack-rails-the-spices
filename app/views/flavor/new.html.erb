@@ -1,0 +1,13 @@
+<h1>create a new flavor</hi>
+<%= form_with model: @flavor do |form| %>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+    <br/>
+    <%= form.label :weight %>
+    <%= form.text_field :weight %>
+    <br/>
+    <br/>
+    <%= form.submit 'Add Flavor' %>
+<% end %>
+<br/>
+<p><%= link_to 'Back to Spice World', favors_path %></p>
